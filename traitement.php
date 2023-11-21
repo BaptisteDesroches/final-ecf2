@@ -25,31 +25,3 @@ array(
 );
     echo "Inscirption réussie !";
 ?>
-
-MySQL create user:
-1
-CREATE USER 'jdupont'@'localhost' IDENTIFIED BY 'mot_de_passe';
-
-delete user:
-1
-DROP USER 'jdupont'@'localhost';
-
-GESTION DES ROLES :
-
-CREATE ROLE developpeur;
-
-donner accès aux privilèges:
-GRANT CREATE TABLE TO developpeur;
-
-attribuer roles aux utilisateurs:
-
-GRANT developpeur TO johndoe@localhost;
-
-SHOW ROLES FOR johndoe;
-
-REVOKE CREATE TABLE FROM developpeur;
-
-
-DROP ROLE developpeur;
-
-https://www.youtube.com/watch?v=_uHaFt5Y9FA
